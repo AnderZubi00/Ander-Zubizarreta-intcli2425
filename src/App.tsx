@@ -3,7 +3,6 @@ import PotionList from './components/PotionList';
 import PotionFilters from './components/PotionFilter';
 import { potions} from './data/data';
 import { Potion } from './types/Potion';
-import viteLogo from 'vite.svg';
 
 const App: React.FC = () => {
   const [filteredPotions, setFilteredPotions] = useState<Potion[]>(potions);

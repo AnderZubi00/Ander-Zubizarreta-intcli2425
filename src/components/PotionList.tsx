@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Potion } from '../types/Potion';
-import DetallesAvanzados from './DetallesAvanzados';
+// import DetallesAvanzados from './DetallesAvanzados';
 
 interface PotionListProps {
   potions: Potion[];
@@ -41,11 +41,11 @@ detailModalShown
               Ver detalles
             </button>
 
-            {detailModalShown && (
+            {/* {detailModalShown && (
           <DetallesAvanzados
             potion={potion}
           />
-        )}
+        )} */}
 
           </div>
         ))}

@@ -9,7 +9,7 @@ const DetallesAvanzados: React.FC<DetallesAvanzadosProps> = ({ potion }) => {
   return (
     <div className="p-4 overflow-x-auto">
       <div className="flex space-x-4 min-w-max">
-            <p className="text-lg text-gray-950">Hola</p>
+            <p className="text-lg text-gray-950"></p>
           
           </div>
         

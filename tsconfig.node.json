@@ -9,5 +9,5 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true
   },
-  "include": ["scripts", "tools"]
+  "include": ["src", "scripts", "tools"]
 }

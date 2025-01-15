@@ -935,3 +935,4 @@ export const potions: Potion[] = [
     image: "image_10.webp",
   },
 ];
+

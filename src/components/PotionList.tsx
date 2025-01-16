@@ -15,13 +15,13 @@ const PotionList: React.FC<PotionListProps> = ({ potions }) => {
 
 
   return (
-    <div className="p-4 overflow-x-auto">
+    <div className="absolute p-8 overflow-x-auto top-24">
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
         {potions.map((potion) => (
           <div
             key={potion.id}
-            className="flex-shrink-0 bg-white shadow-lg rounded-lg w-64 text-center p-4 flex flex-col justify-between"
+            className="flex-shrink-0 bg-white shadow-lg rounded-lg w-64 text-center p-4 flex flex-col justify-between "
           >
             <img
               src={`/${potion.image}`}

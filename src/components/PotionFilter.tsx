@@ -38,7 +38,7 @@ const PotionFilters: React.FC<PotionFiltersProps> = ({ potions, onFilter }) => {
   };
 
   return (
-    <div className="absolute right-6 top-20 w-[45rem] p-4 bg-gray-100 rounded-lg shadow-md max-w-sm">
+    <div className="absolute right-12 top-20 w-[45rem] p-4 bg-gray-100 rounded-lg shadow-md max-w-sm border border-yellow-600">
       <div className="space-y-4">
         <div>
           <label htmlFor="level" className="block font-medium mb-1 text-gray-950">
@@ -90,7 +90,7 @@ const PotionFilters: React.FC<PotionFiltersProps> = ({ potions, onFilter }) => {
       <div className="mt-4 flex flex-col space-y-2">
         <button
           onClick={handleCraftTime}
-          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+          className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600"
         >
           Calcular Tiempo de Creación
         </button>
@@ -106,4 +106,5 @@ const PotionFilters: React.FC<PotionFiltersProps> = ({ potions, onFilter }) => {
 };
 
 export default PotionFilters;
+
 

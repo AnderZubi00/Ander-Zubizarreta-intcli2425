@@ -22,5 +22,9 @@ export function filterByLevelRequirement(potions: Potion[], level: number): Poti
 
 
   export function calculateCraftingTime(potions: Potion[]): number {
-    return potions.reduce((totalTime, potion) => totalTime + potion.crafting.time.amount, 0);
+    return potions.reduce((totalTime, potion) => {
+      const timeInMinutes = potion.crafting.time.unit === "hours" ? potion.crafting.time.amount * 60 : potion.crafting.time.amount; 
+      return totalTime + timeInMinutes;
+    }, 0);
   }
+  

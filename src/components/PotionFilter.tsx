@@ -38,7 +38,7 @@ const PotionFilters: React.FC<PotionFiltersProps> = ({ potions, onFilter }) => {
   };
 
   return (
-    <div className="p-4 bg-gray-100 rounded-lg shadow-md max-w-sm">
+    <div className="absolute right-6 top-20 w-[45rem] p-4 bg-gray-100 rounded-lg shadow-md max-w-sm">
       <div className="space-y-4">
         <div>
           <label htmlFor="level" className="block font-medium mb-1 text-gray-950">

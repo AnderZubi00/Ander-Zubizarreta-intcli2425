@@ -21,7 +21,7 @@ const PotionList: React.FC<PotionListProps> = ({ potions }) => {
         {potions.map((potion) => (
           <div
             key={potion.id}
-            className="flex-shrink-0 bg-white shadow-lg rounded-lg w-64 text-center p-4"
+            className="flex-shrink-0 bg-white shadow-lg rounded-lg w-64 text-center p-4 flex flex-col justify-between"
           >
             <img
               src={`/${potion.image}`}
@@ -29,16 +29,19 @@ const PotionList: React.FC<PotionListProps> = ({ potions }) => {
               className="w-24 h-24 mx-auto mb-2 rounded-full"
             />
             <h3 className="font-bold text-lg">{potion.name}</h3>
-            <p className="text-sm text-gray-600">Nombre: {potion.name}</p>
-            <p className="text-sm text-gray-600">Rareza: {potion.rarity}</p>
-            <p className="text-sm text-gray-600">
-              Dropeado por: {potion.meta.availability.drop_rate.boss}
+            
+            <p className="text-base text-gray-600">
+            <strong>Nombre: </strong> {potion.name}</p>
+            <p className="text-base text-gray-600">
+            <strong>Rareza: </strong> {potion.rarity}</p>
+            <p className="text-base text-gray-600">
+            <strong>Dropeado por: </strong> {potion.meta.availability.drop_rate.boss}
             </p>
-            <p className="text-sm text-gray-600">
-              Drop rate: {potion.meta.availability.drop_rate.chance}
+            <p className="text-base text-gray-600">
+            <strong>Drop rate: </strong> {potion.meta.availability.drop_rate.chance}
             </p>
             <button
-            className="mt-2 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="mt-2 px-4 py-1 bg-gray-700 text-white rounded hover:bg-slate-600"
             onClick={() => setSelectedPotion(potion)}
           >
             Ver detalles
@@ -56,6 +59,8 @@ const PotionList: React.FC<PotionListProps> = ({ potions }) => {
 };
 
 export default PotionList;
+
+
 
 
 

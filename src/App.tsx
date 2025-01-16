@@ -10,7 +10,7 @@ const App: React.FC = () => {
   return (
     <div className="App grid lg:grid-cols-[3fr_1fr] gap-4 p-4">
       <div>
-        <h1 className="text-center text-2xl font-bold mb-4">Lista de Pociones</h1>
+        <h1 className="text-center text-4xl font-bold mb-4">Lista de Pociones</h1>
         <PotionList potions={filteredPotions} />
       </div>
       <div className="sticky top-4 h-fit">

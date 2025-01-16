@@ -25,10 +25,10 @@ const PotionDetailsModal: React.FC<PotionDetailsModalProps> = ({
           alt={potion.name}
           className="w-32 h-32 mx-auto mb-4 rounded-full"
         />
-        <p className="text-gray-950">
+        <p className="text-gray-600">
           <strong>Primary Effect:</strong> {potion.effects.primary.attribute} +{potion.effects.primary.value}% for {potion.effects.primary.duration.amount} {potion.effects.primary.duration.unit}
         </p>
-        <p className="text-gray-950">
+        <p className="text-gray-600">
           <strong>Secondary Effects:</strong>
           <ul className="list-disc pl-6">
             {potion.effects.secondary.map((effect, index) => (
@@ -38,7 +38,7 @@ const PotionDetailsModal: React.FC<PotionDetailsModalProps> = ({
             ))}
           </ul>
         </p>
-        <p className="text-gray-950">
+        <p className="text-gray-600">
           <strong>Ingredients and Origins:</strong>
           <ul className="list-disc pl-6">
             {potion.ingredients.map((ingredient, index) => (
@@ -48,7 +48,7 @@ const PotionDetailsModal: React.FC<PotionDetailsModalProps> = ({
             ))}
           </ul>
         </p>
-        <p className="text-gray-950">
+        <p className="text-gray-600">
           <strong>Restrictions:</strong>
           <ul className="list-disc pl-6">
             <li>Level Requirement: {potion.usage.restrictions.levelRequirement}</li>
@@ -58,7 +58,7 @@ const PotionDetailsModal: React.FC<PotionDetailsModalProps> = ({
             ))}
           </ul>
         </p>
-        <p className="text-gray-950">
+        <p className="text-gray-600">
           <strong>Notice of Use, Side Effects:</strong>
           <ul className="list-disc pl-6">
             {potion.usage.instructions.map((instruction, index) => (
@@ -66,10 +66,10 @@ const PotionDetailsModal: React.FC<PotionDetailsModalProps> = ({
             ))}
           </ul>
         </p>
-        <p className="text-gray-950">
+        <p className="text-gray-600">
           <strong>Crafting Time:</strong> {potion.crafting.time.amount} {potion.crafting.time.unit}
         </p>
-        <p className="text-gray-950">
+        <p className="text-gray-600">
           <strong>Crafting Station:</strong> {potion.crafting.station} (Level {potion.crafting.required_level} required)
         </p>
       </div>
